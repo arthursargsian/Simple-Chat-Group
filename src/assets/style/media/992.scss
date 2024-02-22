@@ -1,0 +1,15 @@
+@media (max-width: 992px) {
+  .chat-group {
+    position: absolute;
+    background: #ffffff;
+    z-index: 1;
+    width: 100%;
+  }
+  .chat-header {
+
+
+    svg {
+      display: block;
+    }
+  }
+}

@@ -1,0 +1,285 @@
+.chat-group {
+  min-width: 23%;
+  height: 100vh;
+  border: 1px solid rgba(128, 128, 128, 0.47);
+}
+
+.chat-header {
+  border-bottom: 1px solid rgba(128, 128, 128, 0.47);
+  padding: 30px 20px 30px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  svg{
+    font-size: 30px;
+    display: none;
+  }
+
+  h3 {
+    font-family: Roboto;
+    font-size: 28px;
+  }
+
+  h5 {
+    color: grey;
+  }
+}
+
+.chat-input {
+  width: 90%;
+  height: 40px;
+  margin-top: 15px;
+  border: 0;
+  background: transparent;
+  outline: none;
+  font-size: 16px;
+}
+
+.chat-search {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  border-bottom: 1px solid rgba(128, 128, 128, 0.47);
+  padding: 0px 10px 11px 17px;
+}
+
+.chat-icon {
+  margin-top: 16px;
+}
+
+.group {
+  width: 100%;
+  height: 83%;
+  overflow: scroll;
+}
+
+.chat-card {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+  cursor: pointer;
+  padding: 10px 10px;
+  transition: all 0.15s;
+  border-bottom: 1px solid rgba(128, 128, 128, 0.17);
+
+  &:hover {
+    background: rgba(234, 243, 252, 0.57);
+  }
+}
+
+.chat-avatar {
+  width: 70px;
+  height: 70px;
+  border-radius: 100%;
+  border: 1px solid rgba(128, 128, 128, 0.47);
+}
+
+.chat-card-admin {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+  cursor: pointer;
+}
+
+.chat-avatar-admin {
+  width: 50px;
+  height: 50px;
+  border-radius: 100%;
+  border: 1px solid rgba(128, 128, 128, 0.47);
+}
+
+.users-list {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.area-header {
+  width: 100%;
+  height: 129px;
+  border-bottom: 1px solid rgba(128, 128, 128, 0.47);
+  display: flex;
+  align-items: center;
+  padding: 10px 20px;
+  justify-content: space-between;
+
+  svg {
+    font-size: 30px;
+    margin-top: -10px;
+    cursor: pointer;
+    transition: all 0.15s;
+    fill: #6e6e6e;
+
+    &:hover {
+      fill: #000000;
+    }
+  }
+}
+
+.chat-document {
+  display: flex;
+}
+
+.chat-block {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.messages-area {
+  width: 100%;
+  background: rgba(234, 243, 252, 0.57);
+  height: 100vh;
+  padding: 30px 40px;
+  overflow: scroll;
+}
+
+.message-input {
+  width: 100%;
+  height: 66px;
+  border-top: 1px solid rgba(128, 128, 128, 0.31);
+  display: flex;
+  align-items: center;
+  position: absolute;
+  bottom: 0;
+  overflow-x: hidden;
+  background: #ffffff;
+
+  svg {
+    font-size: 40px;
+    margin-left: 13px;
+    cursor: pointer;
+    transition: all 0.25s;
+
+    &:hover {
+      fill: rgb(0, 149, 255);
+    }
+  }
+
+  ::-webkit-scrollbar {
+    width: 0;
+  }
+
+  ::-webkit-scrollbar-track {
+    background: rgba(241, 241, 241, 0);
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background: rgba(224, 224, 224, 0);
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    background: rgba(206, 206, 206, 0);
+  }
+
+  textarea {
+    width: 95%;
+    height: 100%;
+    border: 0;
+    outline: none;
+    padding: 5px 20px;
+    resize: none;
+    font-size: 20px;
+  }
+}
+
+.message-avatar {
+  width: 60px;
+  height: 60px;
+}
+
+.message-card {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+
+.user-name-messgae {
+  font-size: 15px;
+  color: #6a6a6a;
+}
+
+.message-box {
+  //width: max-content;
+  //min-width: max-content; /* Add this line */
+  max-width: 600px;
+  background: #7f7f7f;
+  padding: 15px;
+  border-radius: 10px;
+  margin: -10px 0 0 70px
+}
+
+.message {
+  font-size: 16px;
+  color: #ffffff;
+  line-height: 1.2;
+}
+
+.under-input {
+  width: 100%;
+  height: 60px;
+}
+
+.own-block {
+  display: flex;
+  justify-content: flex-end;
+
+  .message-box {
+    background: rgb(55, 151, 240);
+    margin: 15px 0 0 70px;
+  }
+
+  .message-card {
+    display: none;
+  }
+}
+
+.message-block {
+  display: flex;
+
+  .message-box {
+    margin: -7px 0 0 70px;
+  }
+
+  .message-card {
+  }
+}
+
+.message-ul{
+  display: flex;
+  flex-direction: column;
+}
+
+
+.header-icons{
+  display: flex;
+  gap: 10px;
+}
+
+.animation-enter {
+  transform: translateX(-100%);
+}
+
+.animation-enter-active {
+  transform: translateX(0);
+  transition: transform 300ms;
+}
+
+.animation-exit {
+  transform: translateX(0);
+}
+
+.animation-exit-active {
+  transform: translateX(-100%);
+  transition: transform 300ms;
+}
+
+.chat-group {
+  /* Additional styling for the ChatGroup component */
+}
+
+

@@ -1,0 +1,31 @@
+@media (max-width: 600px) {
+  form {
+    padding: 0 1.5rem;
+  }
+
+  .container {
+    padding: 0 10px;
+  }
+
+  .image {
+    display: none;
+  }
+  .panel .content {
+    padding: 0.5rem 1rem;
+  }
+  .container-animation {
+    padding: 1.5rem;
+  }
+
+  .container-animation:before {
+    bottom: 72%;
+    left: 50%;
+  }
+
+  .container-animation.sign-up-mode:before {
+    bottom: 28%;
+    left: 50%;
+  }
+}
+
+

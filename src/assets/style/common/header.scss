@@ -1,0 +1,54 @@
+.header {
+  width: 100%;
+  margin: 10px 0 50px 0;
+  display: flex;
+  justify-content: center;
+}
+
+.search-block {
+  padding: 20px;
+  width: 600px;
+  display: flex;
+  flex-direction: column;
+  gap: 35px;
+  justify-content: center;
+}
+
+.header-desc {
+  display: flex;
+  justify-content: center;
+
+  h5 {
+    font-size: 20px;
+    text-align: center;
+    max-width: 300px;
+    font-family: "Roboto";
+    color: #313131;
+  }
+}
+
+.search-box {
+  display: flex;
+  justify-content: flex-end;
+  padding: 10px 5px;
+  width: 100%;
+  height: 50px;
+  border: #999999 1px solid;
+  border-radius: 30px;
+  align-items: center;
+  gap: 10px;
+
+  input {
+    width: 90%;
+    height: 100%;
+    outline: none;
+    border: 0;
+    background: transparent;
+    padding: 0 5px;
+  }
+}
+
+.search-icon {
+  font-size: 25px;
+}
+
